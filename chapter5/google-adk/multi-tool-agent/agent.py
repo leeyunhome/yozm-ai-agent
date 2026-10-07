@@ -29,7 +29,7 @@ def get_weather(city_name: str) -> dict:  # ① 날씨 관련 도구 함수
 def get_kbo_rank() -> dict:  # ② kbo랭킹을 받아오는 도구 함수
     """한국 프로야구 구단의 랭킹을 가져오는 함수입니다."""
     response = httpx.get(
-        "https://sports.daum.net/prx/hermes/api/team/rank.json?leagueCode=kbo&seasonKey=2025"
+        "https://sports.daum.net/prx/hermes/api/team/rank.json?leagueCode=kbo&seasonKey=2026"
     )
     return response.json()
 
